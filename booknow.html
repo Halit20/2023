@@ -6,7 +6,8 @@
  </head>  
 <style>  
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');  
-body {  
+body { 
+    background-color: hsl(212, 36%, 91%);
   font-family: 'Roboto Condensed', sans-serif;  
   color: #262626;  
   margin: 5% 0;  
@@ -18,6 +19,7 @@ body {
   margin-right: auto;  
   margin-left: auto;  
 }  
+
 @media (min-width: 1200px)  
 {  
   .container {  
@@ -29,7 +31,7 @@ body {
   flex-direction: row;  
   background: #f6f6f6;  
   border-radius: 0 0 5px 5px;  
-  padding: 25px;  
+  padding: px;  
 }  
 form {  
   flex: 4;  
@@ -49,7 +51,7 @@ form {
 }  
 h2 {  
   margin: 0;  
-  padding-left: 15px;   
+  padding-left: 0px;   
 }  
 .required {  
   color: red;  
@@ -65,7 +67,7 @@ table {
 label>span {  
   float: left;  
   width: 25%;  
-  margin-top: 12px;  
+  margin-top: px;  
   padding-right: 10px;  
 }  
 input[type="email"]  
@@ -110,18 +112,19 @@ select {
   margin-bottom: 10px;  
 }  
 .Yorder {  
-  margin-top: 15px;  
+  margin-top: 00px;  
   height: 600px;  
-  padding: 20px;  
-  border: 1px solid #dadada;  
+  padding: 50px;  
+  margin-left: 0px;
+  border: 2px solid #dadada;  
 }  
 table {  
   margin: 0;  
   padding: 0;  
 }  
 th {  
-  border-bottom: 1px solid #dadada;  
-  padding: 10px 0;  
+  border-bottom: 2px solid #dadada;  
+  padding: 0px 0;  
 }  
 tr>td:nth-child(1) {  
   text-align: left;  
@@ -163,7 +166,7 @@ button:hover {
 <body>  
 <div class="container">  
   <div class="title">  
-      <h2> Book Order Form template Example </h2>  
+      <h2>Book Now </h2>  
   </div>  
 <div class="d-flex">  
   <form action="" method="">  
@@ -195,7 +198,6 @@ button:hover {
         <option value="BVT">Bouvet Island</option>  
         <option value="BRA">Brazil</option>  
         <option value="CUB">Cuba</option>  
-        <option value="CUW">Cura?ao</option>  
         <option value="CYP">Cyprus</option>  
         <option value="CZE">Czech Republic</option>  
         <option value="EST">Estonia</option>  
@@ -233,10 +235,8 @@ button:hover {
       <span> Adresse <span class="required"> * </span></span>  
       <input type="text" name="houseadd" placeholder="Hausnummer und Straßenname" required>  
     </label>  
-    <label>  
-      <span> </span>  
-      <input type="text" name="apartment" placeholder="Wohnung, Appartement, Einheit usw. (fakultativ)">  
-    </label>  
+    <div>
+
     <label>  
       <span> Stadt / Ortschaft <span class="required">*</span></span>  
       <input type="text" name="city">   
@@ -250,7 +250,7 @@ button:hover {
       <input type="text" name="city">   
     </label>  
     <label>  
-      <span>  <span class="required">*</span></span>  
+      <span>  <span class="required">Telefon Numer</span></span>  
       <input type="tel" name="city">   
     </label>  
     <label>  
@@ -260,6 +260,20 @@ button:hover {
   </form>  
   <div class="Yorder">  
     <table>  
+        <div>  
+            <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer  
+          </div>  
+          <p>  
+              Überweisen Sie Ihre Zahlung direkt auf unser Bankkonto. 
+              Bitte verwenden Sie Ihre Bestell-ID als Zahlungsreferenz. <br>  Ihre Bestellung wird erst dann versandt,  wenn der Betrag auf unserem Konto eingegangen ist. 
+          </p>  
+          <div>  
+            <input type="radio" name="dbt" value="cd"> Cash on Delivery  
+          </div>  
+          <div>  
+            <input type="radio" name="dbt" value="cd"> Paypal <span>  
+            </span>  
+          </div>  
       <tr>  
         <th colspan="2"> Ihre Bestellung </th>  
       </tr>  
@@ -276,19 +290,7 @@ button:hover {
         <td> Free shipping </td>  
       </tr>  
     </table><br>  
-    <div>  
-      <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer  
-    </div>  
-    <p>  
-        Überweisen Sie Ihre Zahlung direkt auf unser Bankkonto. Bitte verwenden Sie Ihre Bestell-ID als Zahlungsreferenz. Ihre Bestellung wird erst dann versandt, wenn der Betrag auf unserem Konto eingegangen ist. 
-    </p>  
-    <div>  
-      <input type="radio" name="dbt" value="cd"> Cash on Delivery  
-    </div>  
-    <div>  
-      <input type="radio" name="dbt" value="cd"> Paypal <span>  
-      </span>  
-    </div>  
+    
     <button type="button"> Bestellung aufgeben </button>  
   </div>  
  </div>  
